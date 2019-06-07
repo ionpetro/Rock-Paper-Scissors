@@ -1,0 +1,43 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+header {
+  background: black;
+  padding: 20px;
+  text-align: center;
+  color: white;
+}
+
+body {
+  background: #E8E8E8;
+}
+
+div.score-board  {
+  text-align: center;
+  padding: 30px;
+}
+
+div.message {
+  padding: 10px;
+  color: black;
+  font-size: 30px;
+  text-align: center;
+}
+
+div.choices {
+  text-align: center;
+  margin: 20px 0;
+}
+
+div.choice {
+  display: inline-block;
+  padding: 25px;
+  border: 6px solid black;
+  border-radius: 50%
+}
+
+img {
+  width: 150px;
+}
