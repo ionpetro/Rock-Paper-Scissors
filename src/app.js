@@ -68,7 +68,7 @@ function check_scores(final_outcome) {
     userScore ++;
     result_div.innerHTML = "Yeeee!! It's a " + final_outcome + "!";
   } else if (final_outcome == "lose") {
-    result_div.innerHTML = "Unfortunately, you " + final_outcome + ":(";
+    result_div.innerHTML = "Unfortunately, you " + final_outcome + " :(";
     computerScore ++;
   } else {
     result_div.innerHTML = "It's a " + final_outcome + "!";
