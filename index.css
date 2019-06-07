@@ -38,6 +38,10 @@ div.choice {
   border-radius: 50%
 }
 
+div.result {
+  text-align: center;
+}
+
 img {
   width: 150px;
 }
