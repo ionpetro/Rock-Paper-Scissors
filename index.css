@@ -5,7 +5,7 @@
 
 header {
   background: black;
-  padding: 20px;
+  padding: 30px;
   text-align: center;
   color: white;
 }
@@ -15,12 +15,45 @@ body {
 }
 
 div.score-board  {
+  font-size: 60px;
   text-align: center;
-  padding: 30px;
+  padding: 30px 10px;
+  border: 6px solid black;
+  border-radius: 4px;
+  width: 300px;
+  margin: 50px auto;
+  position: relative;
+}
+
+.badge {
+  background: blueviolet;
+  border: 1px solid black;
+  color: white;
+  font-size: 25px;
+}
+
+#user-label {
+  position: absolute;
+  top: 30px;
+  left: -26px;
+}
+
+#com-label {
+  position: absolute;
+  top: 30px;
+  right: -32px;
+}
+
+.result > p {
+  text-align: center;
+  font-weight: bold;
+  font-size: 30px;
+
 }
 
 div.message {
   padding: 10px;
+  font-weight: bold;
   color: black;
   font-size: 30px;
   text-align: center;
@@ -35,7 +68,13 @@ div.choice {
   display: inline-block;
   padding: 25px;
   border: 6px solid black;
-  border-radius: 50%
+  border-radius: 50%;
+  transition: all 0.3s ease;
+}
+
+.choice:hover {
+  cursor: pointer;
+  background: blueviolet;
 }
 
 div.result {

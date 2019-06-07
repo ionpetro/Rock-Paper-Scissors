@@ -4,7 +4,7 @@ var computerScore = 0;
 const userScore_span = document.getElementById("user_score");
 const computerScore_span = document.getElementById("computer_score");
 const scoreBoard_div = document.querySelector(".score-board");
-const result_div = document.querySelector(".result");
+const result_div = document.querySelector(".result > p");
 const rock_div = document.getElementById("r");
 const paper_div = document.getElementById("p");
 const scissors_div = document.getElementById("s");
@@ -68,7 +68,7 @@ function check_scores(final_outcome) {
     userScore ++;
     result_div.innerHTML = "Yeeee!! It's a " + final_outcome + "!";
   } else if (final_outcome == "lose") {
-    result_div.innerHTML = "Unfortunately, you " + final_outcome;
+    result_div.innerHTML = "Unfortunately, you " + final_outcome + ":(";
     computerScore ++;
   } else {
     result_div.innerHTML = "It's a " + final_outcome + "!";
