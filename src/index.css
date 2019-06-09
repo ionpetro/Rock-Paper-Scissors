@@ -26,19 +26,20 @@ div.score-board  {
 }
 
 .badge {
-  background: blueviolet;
   border: 1px solid black;
   color: white;
   font-size: 25px;
 }
 
 #user-label {
+  background: blueviolet;
   position: absolute;
   top: 30px;
   left: -26px;
 }
 
 #com-label {
+  background: red;
   position: absolute;
   top: 30px;
   right: -32px;
