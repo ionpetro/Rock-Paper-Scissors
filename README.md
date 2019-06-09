@@ -1,6 +1,6 @@
 # An implementation of Rock Paper Scissorcs game using Javascript
 <p align="center">
-  <img src="resources/demo.png" alt="drawing" style="width:500px;">
+  <img src="resources/demo1.png" alt="drawing" style="width:500px;">
 </p>
 
 You can find the game here: www.ionpetro.com/rpc-game

@@ -8,6 +8,10 @@ const result_div = document.querySelector(".result > p");
 const rock_div = document.getElementById("r");
 const paper_div = document.getElementById("p");
 const scissors_div = document.getElementById("s");
+const com_rock = document.getElementById("cr");
+const com_paper = document.getElementById("cp");
+const com_scissors = document.getElementById("cs");
+
 
 function main() {
   rock_div.addEventListener('click', function() {
@@ -27,16 +31,29 @@ function main() {
 main()
 
 function computer_choice() {
+  var BackgroundColor = "RED";
   var choice;
   random = Math.floor(Math.random() * 3);
   if (random == 0) {
-    choice = "r"
+    choice = "r";
+    computerColor();
+    com_rock.style.backgroundColor = BackgroundColor;
   } else if (random == 1) {
-    choice = "p"
+    choice = "p";
+    computerColor();
+    com_paper.style.backgroundColor = BackgroundColor;
   } else {
-    choice = "s"
+    choice = "s";
+    computerColor();
+    com_scissors.style.backgroundColor = BackgroundColor;
   }
   return choice
+}
+
+function computerColor() {
+    com_rock.style.backgroundColor = "transparent";
+    com_paper.style.backgroundColor = "transparent";
+    com_scissors.style.backgroundColor = "transparent";
 }
 
 function game(choice) {
@@ -58,7 +75,6 @@ function game(choice) {
         
   var final_outcome = possible_outcomes(choices);
   check_scores(final_outcome);
-  console.log(userScore);
   userScore_span.innerHTML = userScore;
   computerScore_span.innerHTML = computerScore;
 }
