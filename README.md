@@ -14,3 +14,5 @@ By Implementing this game I learned the following:
 * How to react to HTML DOM events
 * How to add and delete HTML elements
 * How to parse Javascript Objects with arrays
+
+Enjoy the game!
